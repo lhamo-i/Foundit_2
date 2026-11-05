@@ -4,6 +4,9 @@
 // Registration only accepts campus email addresses.
 export const CAMPUS_EMAIL_DOMAIN = 'rub.edu.bt';
 
+export const isValidCampusEmail = (email) =>
+  /^\d+\.cst@rub\.edu\.bt$/i.test(email.trim());
+
 export const CATEGORIES = [
   { name: 'Wallet', icon: 'wallet-outline' },
   { name: 'Phone', icon: 'phone-portrait-outline' },
